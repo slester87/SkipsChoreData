@@ -10,4 +10,7 @@ This repository stores actual chore instances created using the Chore Dispatcher
 
 ## Data Format
 
-Chores are stored in JSON Lines format in `chores.jsonl`.
+- **Active chores**: `chores.jsonl` - Chores currently in progress (not WORK_DONE)
+- **Completed chores**: `completed_chores.jsonl` - Chores that have reached WORK_DONE status
+
+Chores are stored in JSON Lines format for easy streaming and appending.
